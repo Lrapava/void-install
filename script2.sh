@@ -10,7 +10,7 @@ xbps-reconfigure -f glibc-locales
 
 echo "# <file system>	<dir>		<type>	<options>				<dump>	<pass>" > /etc/fstab
 echo "tmpfs				/tmp		tmpfs	defaults,nosuid,nodev	0		0" >> /etc/fstab
-echo "/dev/void/root	/			ext4		defaults				0		0" >> /etc/fstab
+echo "/dev/void/root	/		ext4		defaults				0		0" >> /etc/fstab
 # echo "/dev/void/home	/home		xfs		defaults				0		0" >> /etc/fstab
 echo "/dev/void/swap	swap		swap	defaults				0		0" >> /etc/fstab
 echo "/dev/nvme0n1p1	/boot/efi	vfat	defaults				0		0" >> /etc/fstab
