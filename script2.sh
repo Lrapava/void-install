@@ -20,7 +20,7 @@ echo "GRUB_ENABLE_CRYPTODISK=y" >> /etc/default/grub
 micro /etc/default/grub
 
 dd bs=1 count=64 if=/dev/urandom of=/boot/volume.key
-cryptsetup luksAddKey /dev/sda1 /boot/volume.key
+cryptsetup luksAddKey /dev/nvme0n1p2 /boot/volume.key
 
 chmod 000 /boot/volume.key
 chmod -R g-rwx,o-rwx /boot
